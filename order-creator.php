@@ -46,7 +46,7 @@ if (!class_exists('OrderCreator')) {
         protected function set_wc_order_fee()
         {
             $fee = new WC_Order_Item_Fee();
-            $fee->set_name("Orçamento");
+            $fee->set_name("FEE_NAME");
             $fee->set_total($this->get_product_value());
             $this->fee = $fee;
         }
